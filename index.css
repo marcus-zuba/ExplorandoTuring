@@ -1,3 +1,6 @@
+/* Importing Montserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
 body {
   background-color: #f9f9f9;
   background-size : cover;
@@ -8,7 +11,7 @@ body {
 
 footer {
   margin-top: 5%;
-  font-family: "Montserrat SemiBold";
+  font-family: "Montserrat";
 }
 
 #logo {
@@ -19,7 +22,7 @@ footer {
 
 #Phrase {
   color: #afafaf;
-  font-family: "Montserrat SemiBold";
+  font-family: "Montserrat";
   font-size: large ;
   margin-left: 10%;
   margin-bottom: 2%;
