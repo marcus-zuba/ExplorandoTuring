@@ -10,7 +10,8 @@
         <link rel="icon" href="images\icon.png">
 
         <!-- CSS -->
-        <link href="index.css" rel="stylesheet" type="text/css">
+        <link href="src/css/style.css" rel="stylesheet" type="text/css">
+        <link href='src/css/fullpage.css' rel="stylesheet" type="text/css">
 
 
 </head>
@@ -23,33 +24,43 @@
           <a href='index.html'><img id="logo" size="10px" src="images\logo.png"></a>
       </header>
 
-      <br>
-      <h1 id="Phrase">Responda ao CAPTCHA abaixo</h1>
-      <br>
+      <div id="fullpage">
+        <div class="section">Test</div>
+        <div class="section">
+        <br>
+        <h1 id="x">x: </h1>
+        <h1 id="y">y: </h1>
+        <h1 id="Xmovement">x movement:</h1>
+        <h1 id="Ymovement">y movement:</h1>
+        <div id="MAQUINA"></div>
+        <h1 id="Phrase">Responda ao CAPTCHA abaixo</h1>
+        <br>
 
-      <div id="roboCheck">
-      <input type="checkbox" id="checkbox" name="checkbox" value="Bike">
-      <label for="checkbox" id="checkboxText"> Eu não sou um robô</label>
+        <div id="roboCheck">
+        <input type="checkbox" id="checkbox" name="checkbox" value="Bike">
+        <label for="checkbox" id="checkboxText"> Eu não sou um robô</label>
+        </div>
+        
+        <div>
+            <img id="test" src="images\test.png">
+        </div> 
+
+        <!-- FOOTER -->
+        <footer>
+                <p id ="prestxt">
+                    Um projeto Explorable Explanations do
+                    CEFET-MG
+                </p>
+                <p id="prestxt1">
+                    2021 | Felipe Lemos - Marcus Zuba
+                </p>
+              <br>
+        </footer>
       </div>
-      
-      <div>
-          <img id="test" src="images\test.png">
-      </div> 
-
-      <!-- FOOTER -->
-      <footer>
-              <p id ="prestxt">
-                  Um projeto Explorable Explanations do
-                  CEFET-MG
-              </p>
-              <p id="prestxt1">
-                  2021 | Felipe Lemos - Marcus Zuba
-              </p>
-            <br>
-      </footer>
-
-      <script language="javascript" src="index.js"></script>
-</body>
+    </div>
+    <script language="javascript" src="src/javascript/fullpage.js"></script>
+    <script language="javascript" src="src/javascript/index.js"></script>
+  </body>
 
 
 </html>

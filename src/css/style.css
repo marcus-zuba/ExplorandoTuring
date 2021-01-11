@@ -66,3 +66,9 @@ footer {
   color: #23485f;
   text-align: center;
 }
+
+#MAQUINA{
+  color:red;
+  background-color: black;
+  transition: all 10s;
+}
