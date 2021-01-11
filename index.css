@@ -7,7 +7,7 @@ body {
 
 
 footer {
-  margin-top: 3%;
+  margin-top: 5%;
   font-family: "Montserrat SemiBold";
 }
 
@@ -17,13 +17,31 @@ footer {
   margin-bottom: 1%;
 }
 
-
 #Phrase {
   color: #afafaf;
   font-family: "Montserrat SemiBold";
   font-size: large ;
   margin-left: 10%;
   margin-bottom: 2%;
+}
+
+#roboCheck{
+  border:1px solid #afafaf;
+  padding:3% 2% 3% 1.5% ;
+  margin:3% 35% 3% 40%;
+  box-shadow: 5px 5px 5px #dbd9d9;
+  border-radius: 10px;
+}
+
+#checkbox{
+  transform: scale(2);
+  padding: 10px;
+  padding-right: 10px;
+}
+
+#checkboxText{
+  padding-left: 10px;
+  padding-right: 30px;
 }
 
 #test {
