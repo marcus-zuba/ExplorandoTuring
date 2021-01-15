@@ -13,14 +13,6 @@ window.addEventListener("mousemove", function(e){
   y.innerHTML = `y: ${e.clientY}`
   xMove.innerHTML = `x movement:${e.movementX}`
   yMove.innerHTML = `y movement:${e.movementY}`
-
-  setTimeout(function(){
-    if(Math.abs(e.movementX) >= 100 || Math.abs(e.movementY) >= 100)
-      divMaquina.innerHTML = "MAQUINA!!!"
-    else
-      divMaquina.innerHTML = ""
-  }, 10000);
-
 });
 
 new fullpage('#fullpage', {
@@ -28,6 +20,8 @@ new fullpage('#fullpage', {
   responsiveWidth: 700,
   anchors: ['home', 'about-us', 'contact'],
   parallax: true,
+  fitToSection: false,
+  verticalCentered: false,
   onLeave: function(origin, destination, direction){
       console.log("Leaving section" + origin.index);
   },
