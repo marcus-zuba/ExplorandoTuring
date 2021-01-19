@@ -1,0 +1,141 @@
+/* Importing Montserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f9f9f9;
+  background-size : cover;
+}
+
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-family: "Montserrat";
+}
+
+#logo {
+  width : 20%;
+  margin-left: 5%;
+  margin-bottom: 1%;
+  margin-top: 1%;
+}
+
+.Phrase {
+  color: #afafaf;
+  font-family: "Montserrat";
+  font-size: large ;
+  margin-left: 10%;
+  margin-bottom: 2%;
+}
+
+.roboCheck{
+  border:1px solid #afafaf;
+  padding:3% 2% 3% 1.5% ;
+  margin:3% 35% 3% 40%;
+  box-shadow: 5px 5px 5px #dbd9d9;
+  border-radius: 10px;
+}
+
+.checkbox{
+  transform: scale(2);
+  padding: 10px;
+  padding-right: 10px;
+}
+
+.checkboxText{
+  padding-left: 10px;
+  padding-right: 30px;
+}
+
+.test {
+  margin: 10px 100px 10px 10px;
+  width : 22%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+#prestxt {
+  color: #23485f;
+  text-align: center;
+
+}
+
+#prestxt1{
+  color: #23485f;
+  text-align: center;
+}
+
+#introducao{
+  text-align: center;
+  vertical-align: middle;
+}
+
+#boasvindas{
+  font-family: "Montserrat";
+}
+
+.botao{
+	box-sizing: border-box;
+	margin: auto;
+	top: 20px;
+	display: block;
+	text-decoration:none;
+	color:#303030;
+	background-color: #32edb2;
+	border: 3px solid #303030;
+	padding: 1em;
+	border-radius: 0.5em;
+	width: fit-content;
+	text-align: center;
+}
+
+.botao:hover{
+	cursor: pointer;
+	background-color: #f5f5f5;
+	color: black;
+	border: 3px solid #3b3c3d;
+}
+
+.botao-pequeno{
+	color:#303030;
+	background-color: #32edb2;
+	border: 1px solid #303030;
+	padding: 0.2em;
+	width: fit-content;
+	border-radius: 0.5em;
+}
+
+.botao-pequeno:hover{
+	cursor: pointer;
+	background-color: #f5f5f5;
+	color: black;
+	border: 1px solid #3b3c3d;
+	border-radius: 0.5em;
+}
+
+.dicas-captcha1{
+  font-family: "Montserrat";
+  font-size: large ;
+  margin-left: 10%;
+  margin-bottom: 2%;
+	color:#303030;
+	background-color: #32edb2;
+	border: 3px solid #303030;
+	border-radius: 0.5em;
+	width: fit-content;
+	text-align: center;
+}
+
+#explicacao-c1{
+  opacity: 0;
+  transition: all 1s;
+}
