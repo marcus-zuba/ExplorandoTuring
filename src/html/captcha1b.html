@@ -28,7 +28,7 @@
 
   <!-- header -->
   <header>
-    <a href='index.html'><img id="logo" size="10px" src="../../images/logo.png"></a>
+    <a href='../../index.html'><img id="logo" size="10px" src="../../images/logo.png"></a>
   </header>
 
   <section id="captcha1b">
@@ -43,19 +43,30 @@
     </div>
 
     <div id="explicacao-c1">
-      <h1 class="Phrase">Quando você clica no input, vários dados são enviados para serem verificados, como:</h1>      
-      <ul class="Phrase">
-        <li>Dados do seu navegador</li>
-        <li>Dados do seu provedor de internet</li>
-        <li>Dados do aparelho que você usou para se conectar à rede</li>
-        <li>E o mais legal: A posição e velocidade do seu mouse!</li>
-      </ul>
-      <h1 class="Phrase">Caso qualquer um desses acima não seja coerente, você provavelmente é uma máquina! =x </h1>
+
+      <div id=explicacao-flexbox>
+        <div>
+          <h1 class="Phrase">Quando você clica no input, vários dados são enviados para serem verificados, como:</h1>
+          <ul class="Phrase">
+            <li>Dados do seu navegador</li>
+            <li>Dados do seu provedor de internet</li>
+            <li>Dados do aparelho que você usou para se conectar à rede</li>
+            <li>E o mais legal: A posição e velocidade do seu mouse!</li>
+          </ul>
+          <h1 class="Phrase">Caso qualquer um desses acima não seja coerente, você provavelmente é uma máquina! =x </h1>
+        </div>
+        <div>
+          <h1 class="Phrase">Uma dica! Movimente o seu mouse e observe esses valores abaixo: </h1><br>
+          <h1 class="dicas-captcha1"> X position: <span id="x"></span></h1>
+          <h1 class="dicas-captcha1">Y position: <span id="y"></span></h1>
+
+          <h1 class="dicas-captcha1">X speed: <span id="Xmovement"></span></h1>
+          <h1 class="dicas-captcha1">Y speed: <span id="Ymovement"></span></h1>
+
+        </div>
+      </div>
 
       <a href="captcha2a.html" class="botao"> Próximo Captcha! </a>
-
-
-    </div>
 
 
   </section>
