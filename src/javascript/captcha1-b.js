@@ -1,7 +1,7 @@
-function mostrarExplicacao(node){
-  node.disabled = true;
-  $('#explicacao-c1').css('opacity', 100);
-}
+// function mostrarExplicacao(node){
+//   node.disabled = true;
+//   $('#explicacao-c1').css('opacity', 100);
+// }
 
 let x = document.querySelector("#x");
 let y = document.querySelector("#y");
