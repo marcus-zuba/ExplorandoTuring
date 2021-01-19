@@ -24,28 +24,30 @@
 
 <!-- BODY -->
 
-<body onload="createCaptcha()">
+<body>
 
   <!-- header -->
   <header>
     <a href='../../index.html'><img id="logo" size="10px" src="../../images/logo.png"></a>
   </header>
 
-  <section id="captcha2">
+  <section id="captcha2b">
 
-    <h1 class="Phrase">Responda ao CAPTCHA abaixo e tente pensar em como ele funciona!</h1><br>
-
-
-    <div class="roboCheck">
-      <div id="captex-flexbox">
-        <div id="captcha">
-        </div>
-        <button type="button" onclick="createCaptcha()">Atualizar Captcha</button>
-      </div>
-      <input type="text" placeholder="Captcha" id="cpatchaTextBox" />
-      <button id="validarCaptchaButton" type="button" onclick="validateCaptcha()">Validar Captcha</button>
+    <h1 class="Phrase">Esse captcha é um dos mais simples de entender o funcionamento, veja o passo a passo dele:</h1>
+    <ul class="Phrase">
+      <li>Primeiramente é gerado uma sequência de caracteres, composta por qualquer um desses
+        símbolos:<br>0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@!#$%^&*</li>
+      <li>Após isso essa sequência é transformada para uma fonte com estilos que dificultam a leitura de uma
+        inteligência artifical, por exemplo.</li>
+      <li>Por fim, utilizando a entrada do usuário, é verificada se realmente o texto dele bate com a sequência gerada!
+      </li>
+    </ul>
+    <h1 class="Phrase">Teste você mesmo, digite abaixo uma sequência de até 10 caracteres:</h1>
+    <div class="flex-div">
+      <input type="text" onkeyup="createCaptcha(this)" maxlength="10"> <span style="padding:5%">→→→</span>
+      <div id="captcha"></div>
     </div>
-
+    <a id="botaoCaptcha2" href="captcha3a.html" class="botao" style="opacity: 0;">Bora pro último captcha!</a>
   </section>
 
   <!-- FOOTER -->
@@ -69,7 +71,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-  <script language="javascript" src="../javascript/captcha2-a.js"></script>
+  <script language="javascript" src="../javascript/captcha2-b.js"></script>
 
 </body>
 

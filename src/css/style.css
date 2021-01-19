@@ -135,11 +135,75 @@ footer {
 	text-align: center;
 }
 
-#explicacao-c1{
-  opacity: 0;
-  transition: all 1s;
-}
-
 #explicacao-flexbox{
   display: flex;
+  align-content: space-between;
+}
+
+#captex-flexbox{
+  display: flex;
+  margin: 5% 5%;
+  height: 100%;
+}
+
+#captcha2 #captcha{
+  margin: 5% 5%;
+}
+
+#captcha2 input{
+  margin: 10% 0%;
+}
+
+.flex-div{
+  text-align: center;
+  display: flex;
+  vertical-align: middle;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.flex-div input{
+  margin: 5%;
+}
+
+#gridImagens{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto; 
+  gap:10px;
+  justify-content: space-around;
+  justify-items: center;
+  align-content: space-around;
+  align-items: center;
+}
+
+#gridImagens img{
+margin: 3%;
+}
+
+
+.selected{
+  width: 120px;
+  height: 120px;
+  opacity: 50%;
+}
+
+#gridContainer{
+  margin-left: 33%;
+  text-align: center;
+  border:1px solid #afafaf;
+  width: 500px;
+  height: 450px;
+  box-shadow: 5px 5px 5px #dbd9d9;
+  border-radius: 10px;
+}
+
+#botaoValidarImagens{
+  margin: 5%;
+}
+
+#fim{
+  text-align: center;
 }
