@@ -36,29 +36,31 @@
     <h1 class="Phrase">Responda ao CAPTCHA abaixo e tente pensar em como ele funciona!</h1><br>
 
 
-    <div class="roboCheck">
-      <div id="captex-flexbox">
-        <div id="captcha">
-        </div>
-        <button type="button" onclick="createCaptcha()">Atualizar Captcha</button>
+    <div class="writeCap">
+      <input id="captchaTextBox" style="margin:5% 5% 5% 5%;" type="text" placeholder="Digite o escrito abaixo" />
+      <div id="captcha" style="text-align: center;"></div>
+      <div id="mapeamento">
+        <button id="button" onclick="createCaptcha()"><img style="width: 140%" src="../../images/refresh.png"></button>
+        <button id="validarCaptchaButton" type="button" onclick="validateCaptcha()">Validar</button>
       </div>
-      <input type="text" placeholder="Captcha" id="cpatchaTextBox" />
-      <button id="validarCaptchaButton" type="button" onclick="validateCaptcha()">Validar Captcha</button>
     </div>
 
   </section>
 
+
+  <br>
+  <br>
   <!-- FOOTER -->
-  <footer>
+  <footer style="display: block;">
     <p id="prestxt">
       Um projeto Explorable Explanations do
       CEFET-MG
-    </p>
-    <p id="prestxt1">
+    <br>
       2021 | Felipe Lemos - Marcus Zuba
     </p>
 
   </footer>
+
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

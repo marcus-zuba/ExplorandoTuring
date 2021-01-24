@@ -34,7 +34,7 @@ function checkImages(){
       html: true,
       trigger: '',
       title: 'Imagens inválidas!',
-      content: '<p>Será que você é uma máquina? Poxa! Tenta de novo!</p>'});
+      content: '<p>Será que você é uma máquina? Poxa! Tente de novo!</p>'});
     $('#botaoValidarImagens').popover('show');
   }
 

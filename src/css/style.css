@@ -10,21 +10,24 @@ html, body {
 body {
   background-color: #f9f9f9;
   background-size : cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 
 footer {
-  position: absolute;
-  bottom: 0;
   width: 100%;
   font-family: "Montserrat";
+  flex: 0 0 50px;
+  margin-top: auto;
 }
 
 #logo {
   width : 20%;
   margin-left: 5%;
   margin-bottom: 1%;
-  margin-top: 1%;
+  margin-top: 2%;
 }
 
 .Phrase {
@@ -32,15 +35,24 @@ footer {
   font-family: "Montserrat";
   font-size: large ;
   margin-left: 10%;
+  margin-top: 2%;
   margin-bottom: 2%;
 }
 
 .roboCheck{
-  border:1px solid #afafaf;
-  padding:3% 2% 3% 1.5% ;
-  margin:3% 35% 3% 40%;
+  border:0.2px solid #afafaf;
+  padding:2.2% 2% 2.2% 1.5% ;
+  margin:7% 35% 3% 40%;
   box-shadow: 5px 5px 5px #dbd9d9;
-  border-radius: 10px;
+  border-radius: 5px;
+}
+
+.writeCap{
+  width:20%; height:40%;
+  margin:7% 35% 3% 40%;
+  border:0.2px solid #afafaf;
+  box-shadow: 5px 5px 5px #dbd9d9;
+  border-radius: 5px;
 }
 
 .checkbox{
@@ -62,16 +74,21 @@ footer {
   margin-right: auto;
 }
 
+#sectiod{
+  display: block;
+}
+
 
 #prestxt {
-  color: #23485f;
+  color: #5d5d5d;
   text-align: center;
-
+  display: block;
 }
 
 #prestxt1{
-  color: #23485f;
+  color: #5d5d5d;
   text-align: center;
+  display: block;
 }
 
 #introducao{
@@ -81,56 +98,49 @@ footer {
 
 #boasvindas{
   font-family: "Montserrat";
+  color:#5d5d5d;
 }
 
 .botao{
 	box-sizing: border-box;
 	margin: auto;
-	top: 20px;
+	top: 5px;
 	display: block;
 	text-decoration:none;
-	color:#303030;
-	background-color: #32edb2;
-	border: 3px solid #303030;
-	padding: 1em;
-	border-radius: 0.5em;
+	color:#f9f9f9;
+	background-color: #3FD4AD;
+	padding: 0.5em;
+	border-radius: 0.2em;
 	width: fit-content;
 	text-align: center;
 }
 
 .botao:hover{
 	cursor: pointer;
-	background-color: #f5f5f5;
-	color: black;
-	border: 3px solid #3b3c3d;
+	background-color: #f9f9f9;
+	color:#3FD4AD;
 }
 
 .botao-pequeno{
 	color:#303030;
-	background-color: #32edb2;
-	border: 1px solid #303030;
+	background-color: #3FD4AD;
 	padding: 0.2em;
 	width: fit-content;
-	border-radius: 0.5em;
+	border-radius: 0.2em;
 }
 
 .botao-pequeno:hover{
 	cursor: pointer;
 	background-color: #f5f5f5;
-	color: black;
+	color: #f9f9f9;
 	border: 1px solid #3b3c3d;
-	border-radius: 0.5em;
+	border-radius: 0.2em;
 }
 
 .dicas-captcha1{
   font-family: "Montserrat";
   font-size: large ;
-  margin-left: 10%;
-  margin-bottom: 2%;
-	color:#303030;
-	background-color: #32edb2;
-	border: 3px solid #303030;
-	border-radius: 0.5em;
+	color:#3FD4AD;
 	width: fit-content;
 	text-align: center;
 }
@@ -140,18 +150,30 @@ footer {
   align-content: space-between;
 }
 
-#captex-flexbox{
+#mapeamento{
   display: flex;
-  margin: 5% 5%;
-  height: 100%;
+  align-content: space-between;
 }
 
+#captex-flexbox{
+  display: flex;
+  }
+
 #captcha2 #captcha{
-  margin: 5% 5%;
+  background-color: transparent;
+  height: 5em;
+  margin-left: 5%;
 }
 
 #captcha2 input{
-  margin: 10% 0%;
+  display: block;
+}
+
+#button{  
+  margin:0 0 5% 5%; 
+  width:20%;
+  background-color: transparent;
+  border: transparent;
 }
 
 .flex-div{
@@ -172,7 +194,6 @@ footer {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto auto; 
-  gap:10px;
   justify-content: space-around;
   justify-items: center;
   align-content: space-around;
@@ -180,30 +201,46 @@ footer {
 }
 
 #gridImagens img{
-margin: 3%;
+  margin-right: 1%;
+  margin-bottom: 3%;
 }
 
 
 .selected{
   width: 120px;
   height: 120px;
-  opacity: 50%;
+  opacity: 60%;
 }
 
 #gridContainer{
   margin-left: 33%;
   text-align: center;
   border:1px solid #afafaf;
-  width: 500px;
-  height: 450px;
+  width: 420px;
+  height: 600px;
   box-shadow: 5px 5px 5px #dbd9d9;
   border-radius: 10px;
 }
 
+#validarCaptchaButton{
+  margin: 0 5% 5% 60%; 
+  color:#f9f9f9; 
+  background-color:#3FD4AD; 
+  border:transparent;
+}
+
 #botaoValidarImagens{
+  color: #3FD4AD;
   margin: 5%;
+  margin-left: 80%;
+  background-color: transparent;
+  border: transparent;
 }
 
 #fim{
+  color: #afafaf;
+  font-family: "Montserrat";
+  font-size: large ;
+  margin-top: 2%;
   text-align: center;
 }

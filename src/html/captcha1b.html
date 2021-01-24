@@ -36,7 +36,7 @@
 
       <h1 class="Phrase">Clique no captcha para ver o seu funcionamento!</h1><br>
 
-      <div class="roboCheck">
+      <div class="roboCheck"  style="margin-top: 1%;">
         <input type="checkbox" class="checkbox" name="checkbox" value="Bike" checked disabled>
         <label for="checkbox" class="checkboxText"> Eu não sou um robô</label>
       </div>
@@ -46,44 +46,53 @@
 
       <div id=explicacao-flexbox>
         <div>
-          <h1 class="Phrase">Quando você clica no input, vários dados são enviados para serem verificados, como:</h1>
-          <ul class="Phrase">
-            <li>Dados do seu navegador</li>
-            <li>Dados do seu provedor de internet</li>
-            <li>Dados do aparelho que você usou para se conectar à rede</li>
+          <h1 class="Phrase">Quando você clica na checkbox, vários dados são verificados, como:</h1>
+          <ul class="Phrase" style="color: #5d5d5d">
+            <li>Dados do seu navegador.</li>
+            <li>Dados do seu provedor de internet.</li>
+            <li>Dados do aparelho que você usou para se conectar à rede.</li>
             <li>E o mais legal: A posição e velocidade do seu mouse!</li>
           </ul>
-          <h1 class="Phrase">Caso qualquer um desses acima não seja coerente, você provavelmente é uma máquina! =x </h1>
+          <h1 class="Phrase">Se algum desses não estão coerentes, você provavelmente é uma máquina! </h1>
         </div>
-        <div>
-          <h1 class="Phrase">Uma dica! Movimente o seu mouse e observe esses valores abaixo: </h1><br>
-          <h1 class="dicas-captcha1"> X position: <span id="x"></span></h1>
-          <h1 class="dicas-captcha1">Y position: <span id="y"></span></h1>
 
-          <h1 class="dicas-captcha1">X speed: <span id="Xmovement"></span></h1>
-          <h1 class="dicas-captcha1">Y speed: <span id="Ymovement"></span></h1>
-
+        <div >
+          <h1 class="Phrase">Experimente! Movimente o seu mouse e observe o mapeamento do seu cursor: </h1><br>
+          <div id="mapeamento" style="margin-left: 10%;">
+            <div style=" margin-left: 10%;">
+            Posição no eixo X:
+            <br><h1 class="dicas-captcha1"><span id="x"></span></h1>
+            Posição no eixo Y:
+            <br><h1 class="dicas-captcha1"><span id="y"></span></h1>
+            </div><div style="margin-left: 10%;">
+            Velocidade no eixo X:
+            <br><h1 class="dicas-captcha1"><span id="Xmovement"></span></h1>
+            Velocidade no eixo Y:
+            <br><h1 class="dicas-captcha1"><span id="Ymovement"></span></h1>
+            </div>
+          </div>
         </div>
       </div>
 
       <a href="captcha2a.html" class="botao"> Próximo Captcha! </a>
-
+      </div>
 
   </section>
 
 
+  <br>
+  <br>
+ <!-- FOOTER -->
+ <footer style="display: block;">
+  <p id="prestxt">
+    Um projeto Explorable Explanations do
+    CEFET-MG
+  <br>
+    2021 | Felipe Lemos - Marcus Zuba
+  </p>
 
-  <!-- FOOTER -->
-  <footer>
-    <p id="prestxt">
-      Um projeto Explorable Explanations do
-      CEFET-MG
-    </p>
-    <p id="prestxt1">
-      2021 | Felipe Lemos - Marcus Zuba
-    </p>
+</footer>
 
-  </footer>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
