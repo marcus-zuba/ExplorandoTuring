@@ -37,11 +37,16 @@
       <h1 class="Phrase">Responda ao CAPTCHA abaixo e tente pensar em como ele funciona!</h1><br>
 
       <div class="roboCheck">
-        <input type="checkbox" class="checkbox" name="checkbox" value="Bike" data-toggle="popover" data-placement="left"
-          title="Você é um humano!" data-html="true"
-          data-content='<p>Bacana né? Bora aprender como funciona esse captcha?</p><a class="botao-pequeno" href="captcha1b.html">Bora!</a>'>
+        <input type="checkbox" class="checkbox" name="checkbox" value="Bike" onclick="showEnd()" data-toggle="popover" data-placement="left"
+          title="Você é um humano!" data-html="true">
         <label for="checkbox" class="checkboxText"> Eu não sou um robô</label>
       </div>
+
+      <div id="FinalC1" class="finaisCaptchasA">
+        <h3>Bacana né? Bora aprender como funciona esse captcha?</h3><br>
+        <a id="BotaoBora" class="botao-pequeno disabled" href="captcha1b.html" >Bora!</a>
+      </div>
+
     </div>
 
   </section>

@@ -29,17 +29,19 @@ function validateCaptcha() {
   debugger
   if (document.getElementById("captchaTextBox").value == code) {
     $('#validarCaptchaButton').popover('dispose');
-    $('#validarCaptchaButton').popover({placement: 'bottom',
+    $('#validarCaptchaButton').popover({placement: 'right',
       container: 'body',
       html: true,
       trigger: '',
       title: 'Captcha Válido!',
-      content: '<p>Você é um humano! Bora ver como esse captcha funciona?</p> <a href="captcha2b.html" class="botao-pequeno">Bora!</a>'});
+      content: '<p>Você é um humano!'});
     $('#validarCaptchaButton').popover('show');
+    $('#FinalC2').css('opacity', 100);
+    $('#BotaoBora').removeClass('disabled');
 
   } else {
     $('#validarCaptchaButton').popover('dispose');
-    $('#validarCaptchaButton').popover({placement: 'bottom',
+    $('#validarCaptchaButton').popover({placement: 'right',
       container: 'body',
       html: true,
       trigger: '',

@@ -214,6 +214,7 @@ footer {
 
 #gridContainer{
   margin-left: 33%;
+  margin-bottom: 3%;
   text-align: center;
   border:1px solid #afafaf;
   width: 420px;
@@ -243,4 +244,15 @@ footer {
   font-size: large ;
   margin-top: 2%;
   text-align: center;
+}
+
+.finaisCaptchasA{
+  text-align: center;
+  opacity: 0;
+  transition: all 500ms;
+}
+
+a.disabled {
+  pointer-events: none;
+  cursor: default;
 }
