@@ -33,32 +33,35 @@
 
   <section id="captcha2b">
 
-    <h1 class="Phrase">Esse captcha é um dos mais simples de entender o funcionamento, veja o passo a passo dele:</h1>
-    <ul class="Phrase">
-      <li>Primeiramente é gerado uma sequência de caracteres, composta por qualquer um desses
-        símbolos:<br>0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@!#$%^&*</li>
-      <li>Após isso essa sequência é transformada para uma fonte com estilos que dificultam a leitura de uma
-        inteligência artifical, por exemplo.</li>
+    <h1 class="Phrase">Esse captcha é um dos mais simples de entender o funcionamento:</h1>
+    <ul class="Phrase" style="color: #5d5d5d">
+      <li>Primeiramente é gerado uma sequência de caracteres, composta por qualquer combinação de letras, números e caracteres especiais<br></li>
+      <li>Após isso, é alterada a fonte para uma de estilo que dificulta a leitura de inteligências artificiais</li>
       <li>Por fim, utilizando a entrada do usuário, é verificada se realmente o texto dele bate com a sequência gerada!
       </li>
     </ul>
-    <h1 class="Phrase">Teste você mesmo, digite abaixo uma sequência de até 10 caracteres:</h1>
+    <h1 class="Phrase">Teste você mesmo, digite abaixo uma sequência de até 12 caracteres:</h1>
     <div class="flex-div">
-      <input type="text" onkeyup="createCaptcha(this)" maxlength="10"> <span style="padding:5%">→→→</span>
+      <input type="text" onkeyup="createCaptcha(this)" maxlength="12"><img style="margin-right:4%"src="../../images/arrow.png">
       <div id="captcha"></div>
     </div>
     <a id="botaoCaptcha2" href="captcha3a.html" class="botao" style="opacity: 0;">Bora pro último captcha!</a>
   </section>
 
+
+  <br>
+    <br>
   <!-- FOOTER -->
-  <footer>
+  <footer style="display: block;">
     <p id="prestxt">
       Um projeto Explorable Explanations do
       CEFET-MG
-    </p>
-    <p id="prestxt1">
+    <br>
       2021 | Felipe Lemos - Marcus Zuba
     </p>
+
+  </footer>
+
 
   </footer>
 

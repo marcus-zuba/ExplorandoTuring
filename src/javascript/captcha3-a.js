@@ -19,22 +19,24 @@ function checkImages(){
   });
   if(acertou){
     $('#botaoValidarImagens').popover('dispose');
-    $('#botaoValidarImagens').popover({placement: 'bottom',
+    $('#botaoValidarImagens').popover({placement: 'right',
     container: 'body',
       html: true,
       trigger: '',
       title: 'Imagens Válidas!',
-      content: '<p>Você é um humano! Bora ver como esse captcha funciona?</p> <a href="captcha3b.html" class="botao-pequeno">Bora!</a>'});
+      content: '<p>Você é um humano!'});
     $('#botaoValidarImagens').popover('show');
+    $('#FinalC3').css('opacity',100);
+    $('#BotaoBora').removeClass('disabled');
   }
   else{
     $('#botaoValidarImagens').popover('dispose');
-    $('#botaoValidarImagens').popover({placement: 'bottom',
+    $('#botaoValidarImagens').popover({placement: 'right',
       container: 'body',
       html: true,
       trigger: '',
       title: 'Imagens inválidas!',
-      content: '<p>Será que você é uma máquina? Poxa! Tenta de novo!</p>'});
+      content: '<p>Será que você é uma máquina? Poxa! Tente de novo!</p>'});
     $('#botaoValidarImagens').popover('show');
   }
 
