@@ -99,6 +99,8 @@ footer {
 #boasvindas{
   font-family: "Montserrat";
   color:#5d5d5d;
+  font-size:x-large;
+  margin-top: 1%;
 }
 
 .botao{
@@ -213,14 +215,15 @@ footer {
 }
 
 #gridContainer{
-  margin-left: 33%;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 3%;
   text-align: center;
   border:1px solid #afafaf;
   width: 420px;
   height: 600px;
   box-shadow: 5px 5px 5px #dbd9d9;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 #validarCaptchaButton{
